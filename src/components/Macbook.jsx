@@ -4,8 +4,8 @@ import React from "react";
 import * as THREE from "three";
 
 export default function Macbook(){
-   let model= useGLTF("src/components/mac.glb");
-   let tex=useTexture("src/components/red.jpg")
+   let model= useGLTF("./../public/mac.glb");
+   let tex=useTexture("./../public/red.jpg")
     let meshes={}
     model.scene.traverse((e)=>{
         meshes[e.name]=e;
